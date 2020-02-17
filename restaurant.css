@@ -1,0 +1,148 @@
+html{
+    margin: 0;
+    padding:0;
+    font-family: 'Inria Serif', serif;
+    background-color: #EFEBE6;
+    color: #4A4A4A;
+    font-size: 1.1em;
+    scroll-behavior: smooth;
+}
+header{
+    top:0;
+    text-align: center;
+} 
+#title{
+    font-size: 3em;
+    padding: 0 0 2% 0;
+    margin:0;
+}
+nav a{
+    color: #4A4A4A;
+    text-decoration: none;
+    padding: 0 3%;
+}
+#myLinks{
+    display: inline;
+    border-bottom: 1px solid #DF9797;
+}
+.filter{
+    text-align: center;
+    width:10%;
+    height: 4em;
+    padding: 1%;
+    background-color: #F0B9B9;
+    color:#4A4A4A;
+    border: none;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 0.5em;
+    cursor: pointer;
+}
+h2{
+    padding: 5% 0 0 0;
+    
+    border-bottom: 1px solid #DF9797;
+}
+h3{
+    height: 2em
+}
+.course{
+    padding-top: 0;
+    margin-top: 0;
+}
+img{
+    width: 100%
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 10%
+}
+    .container{
+        position: relative;
+        text-align: center;
+    }    
+
+    .price-full{
+        position: absolute;
+        right: 5px;
+        bottom: 5px
+    }
+    .price-discount{
+        position: absolute;
+        left: 5px;
+        bottom: 5px;
+    }
+    .price{
+        background-color:  #EFEBE6;
+        padding: 2px 5px;
+        border: 1px solid #4A4A4A;
+    }
+
+.soldout{
+    width: 110%;
+    background-color: #F0B9B9;
+    transform: translateX(-5%)rotate(-30deg);
+    
+}
+    .read-more{
+        width:100%;
+        padding: 3%;
+        background-color: #F0B9B9;
+        color:#4A4A4A;
+        border: none;
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 600;
+        font-size: 0.7em;
+        margin-bottom: 10%
+    }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media all and (min-width: 600px) {
+  main > section > h2 {
+    grid-column: 1/-1;
+  }
+  main > section {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 1.5rem;
+    grid-auto-rows: 1fr;
+    padding-bottom: 10%
+}

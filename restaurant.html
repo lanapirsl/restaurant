@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="restaurant.css">
+        <link href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <title> Restaurant </title>
+    </head>
+    
+    <body>
+        <header><p id="title">menu</p>
+            <nav>
+                <div id="myLinks">
+                </div>
+            </nav>
+            <!--
+        <button class="filter" id="vegetarian" onclick="filter(this.id)">vegetarian</button>
+        <button class="filter" id="discount" onclick="filter(this.id)">discounts</button>
+        <button class="filter" id="available" onclick="filter(this.id)">available</button> -->
+        </header>
+        
+        <main>
+            <template id="dishTemplate">
+            <article class="course">
+                <header>
+                <h3>name</h3>
+                    <div class="container">
+                        <img class="course-image" src="default.jpg">
+                        <p class="soldout">Sold out!</p>
+                        <p class="price price-discount"><span>69</span>,-</p>
+                        <p class="price price-full"><span>69</span>,-</p>
+                    </div>
+                </header>
+            <p class="why">short description</p>
+                
+            <button class="read-more" id="" onclick="showModal(this)">READ MORE</button>
+            </article>
+                
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close" id="" onclick="hideModal(this)">&times;</span>
+                  <h4>name</h4>
+                  <img class="modal-image" src="default.jpg">
+                  <ul class="modalInfo"></ul>
+              </div>
+
+            </div>    
+            </template>
+        </main>
+    <script src="restaurant.js"></script>
+    </body>
+</html>
